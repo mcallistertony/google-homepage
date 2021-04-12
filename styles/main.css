@@ -12,7 +12,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 90vh;
 
     display: flex;
     flex-direction: column;
@@ -46,6 +46,7 @@ main .main-content #searchbar {
     display: flex;
     align-items: center;
     padding: 0 10px;
+    z-index: 2;
 }
 
 #searchbar:hover {
@@ -73,3 +74,72 @@ main .main-content .buttons-area button {
     cursor: pointer;
 }
 
+#material-icons-mic, #icon-apps {
+    cursor: pointer !important;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+}
+
+nav .navbar ul li{
+    display: inline;
+    margin: auto 15px;
+}
+nav .navbar ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#button-sign-in {
+    background-color: rgb(95, 132, 253);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin: auto 20px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    position: fixed;
+    background-color: #f2f2f2;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 10px 50px;
+    bottom:0px;
+    height: 50px;
+    align-items: center;
+}
+
+footer ul li {
+    display: inline;
+    margin: auto 10px;
+    color: #222;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    main .main-content #searchbar {
+        width: 80vw;
+    }
+}
